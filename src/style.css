@@ -1,7 +1,10 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .display-type-class {
     display: flex;
 =======
+=======
+>>>>>>> 6200c88b94911d2fa85523c28c7c7f40f0bd3d50
 *{
     margin: 0;
     padding: 0; 
@@ -123,5 +126,12 @@
 .button-style:hover{
     border-radius: 8px;
     color: #ffcb08;
+<<<<<<< HEAD
 >>>>>>> 4564285ce58ca7784cb2029494641c17ea780a38
+=======
+}
+
+.display-type-class {
+    display: flex;
+>>>>>>> 6200c88b94911d2fa85523c28c7c7f40f0bd3d50
 }

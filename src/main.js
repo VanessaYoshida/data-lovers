@@ -47,17 +47,25 @@ function getOrderedPokemonByNames(){
 function showNamesPokemon(){
     let namesPokemon= document.getElementById("names-pokemon")
 <<<<<<< HEAD
+<<<<<<< HEAD
     
+=======
+
+>>>>>>> 6200c88b94911d2fa85523c28c7c7f40f0bd3d50
     namesPokemon.innerHTML += `
     ${getOrderedPokemonByNames().map((pokemon)=> `
         <option value="${pokemon['id']}" class="list-pokemon">
              ${pokemon['name']}
+<<<<<<< HEAD
 =======
     namesPokemon.innerHTML += `
     ${getNamesPokemon().map((names)=> `
         <option value="${names['id']}" class="list-pokemon">
              ${names['name']}
 >>>>>>> 4564285ce58ca7784cb2029494641c17ea780a38
+=======
+
+>>>>>>> 6200c88b94911d2fa85523c28c7c7f40f0bd3d50
         </option>
     `).join("")}
    `
@@ -70,10 +78,14 @@ function selectedPokemon(){
     let result = POKEMON['pokemon'].filter(pokemon => pokemon.id == pokemonId);
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     let showPokemon = document.getElementById('get-pokemon');
 =======
     let showPokemon = document.getElementById("display-name");
 >>>>>>> 4564285ce58ca7784cb2029494641c17ea780a38
+=======
+    let showPokemon = document.getElementById("display-name");
+>>>>>>> 6200c88b94911d2fa85523c28c7c7f40f0bd3d50
     showPokemon.innerHTML = ''
     showPokemon.innerHTML += `
         ${result.map( pokemon => `
@@ -101,9 +113,13 @@ let selectWeaknesses = document.querySelector("#select-weaknesses");
 let displayWeaknesses = document.querySelector("#display-weaknesses");
 let arrayTypes = ["Grass", "Fire", "Water", "Bug", "Normal", "Poison", "Electric", "Ground", "Fighting", "Psychic", "Rock", "Flying", "Ghost", "Ice", "Dragon", "Steel", "Dark", "Fairy"];
 <<<<<<< HEAD
+<<<<<<< HEAD
 arrayTypes.sort();
 =======
 >>>>>>> 4564285ce58ca7784cb2029494641c17ea780a38
+=======
+arrayTypes.sort();
+>>>>>>> 6200c88b94911d2fa85523c28c7c7f40f0bd3d50
 
 function showTypePokemon(category){
     for(i in arrayTypes){
@@ -165,7 +181,11 @@ function showPokemon(pokemon, tagById){
                 </section>        
                 `
 <<<<<<< HEAD
+<<<<<<< HEAD
 }
 =======
 }
 >>>>>>> 4564285ce58ca7784cb2029494641c17ea780a38
+=======
+}
+>>>>>>> 6200c88b94911d2fa85523c28c7c7f40f0bd3d50
