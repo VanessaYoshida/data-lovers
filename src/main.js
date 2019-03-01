@@ -4,6 +4,33 @@ window.onload= function(){
     showTypePokemon(selectType);
     showTypePokemon(selectWeaknesses);
 }
+//Parte do codigo para esconder as telas de acordo com o select, falta fazer os botoes!
+
+document.querySelector("#btn-voltar").style.display = "none";
+
+function hideScreenName(){
+    document.querySelector("#section-types").style.display = "none";
+    document.querySelector("#section-weaknesses").style.display = "none";
+    document.querySelector(".imagem-box").style.display = "none";
+    document.querySelector(".text-select-box").style.display = "none";
+    document.querySelector("#btn-voltar").style.display = "block";
+}
+
+
+function hideScreenType(){
+    document.querySelector("#section-names").style.display = "none";
+    document.querySelector("#section-weaknesses").style.display = "none";
+  
+}
+
+function hideScreenWeaknesses(){
+    document.querySelector("#section-names").style.display = "none";
+    document.querySelector("#section-types").style.display = "none";
+    
+    
+}
+//Acaba aqui
+
 
 function getOrderedPokemonByNames(){
     return POKEMON.pokemon.sort((a, b) => {
@@ -19,11 +46,18 @@ function getOrderedPokemonByNames(){
 
 function showNamesPokemon(){
     let namesPokemon= document.getElementById("names-pokemon")
+<<<<<<< HEAD
     
     namesPokemon.innerHTML += `
     ${getOrderedPokemonByNames().map((pokemon)=> `
         <option value="${pokemon['id']}" class="list-pokemon">
              ${pokemon['name']}
+=======
+    namesPokemon.innerHTML += `
+    ${getNamesPokemon().map((names)=> `
+        <option value="${names['id']}" class="list-pokemon">
+             ${names['name']}
+>>>>>>> 4564285ce58ca7784cb2029494641c17ea780a38
         </option>
     `).join("")}
    `
@@ -35,12 +69,16 @@ function selectedPokemon(){
   
     let result = POKEMON['pokemon'].filter(pokemon => pokemon.id == pokemonId);
 
+<<<<<<< HEAD
     let showPokemon = document.getElementById('get-pokemon');
+=======
+    let showPokemon = document.getElementById("display-name");
+>>>>>>> 4564285ce58ca7784cb2029494641c17ea780a38
     showPokemon.innerHTML = ''
     showPokemon.innerHTML += `
         ${result.map( pokemon => `
-            <p>Nome: ${pokemon.name}</p>
             <img src="${pokemon.img}">
+            <p>Nome: ${pokemon.name}</p>
             <p> Tipo: ${pokemon.type}</p>
             <p>Altura: ${pokemon.height}</p>
             <p>Peso: ${pokemon.weight}</p>
@@ -62,7 +100,10 @@ let displayType = document.querySelector("#display-type");
 let selectWeaknesses = document.querySelector("#select-weaknesses");
 let displayWeaknesses = document.querySelector("#display-weaknesses");
 let arrayTypes = ["Grass", "Fire", "Water", "Bug", "Normal", "Poison", "Electric", "Ground", "Fighting", "Psychic", "Rock", "Flying", "Ghost", "Ice", "Dragon", "Steel", "Dark", "Fairy"];
+<<<<<<< HEAD
 arrayTypes.sort();
+=======
+>>>>>>> 4564285ce58ca7784cb2029494641c17ea780a38
 
 function showTypePokemon(category){
     for(i in arrayTypes){
@@ -123,4 +164,8 @@ function showPokemon(pokemon, tagById){
                     </div> 
                 </section>        
                 `
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 4564285ce58ca7784cb2029494641c17ea780a38
